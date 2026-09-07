@@ -1,0 +1,56 @@
+{
+  "repository": "https://github.com/anttiluode/JelloBrain",
+  "commit": "0141b091f7efda638feede6e9a4d8b15003e7af6",
+  "retrieved_utc": "2026-09-07",
+  "files": [
+    {
+      "path": "vendor/jellobrain/jellobrain.py",
+      "source_path": "jellobrain.py",
+      "source_commit": "0141b091f7efda638feede6e9a4d8b15003e7af6",
+      "sha256": "2ab25c8be0e794d65d7fcaa59c025d5cc93c77573ab4d31a5ba66dc07094f8c5",
+      "role": "unchanged executable source"
+    },
+    {
+      "path": "vendor/jellobrain/spatial_launcher.py",
+      "source_path": "spatial_launcher.py",
+      "source_commit": "0141b091f7efda638feede6e9a4d8b15003e7af6",
+      "sha256": "a4bf0a4942453e2a666e351de15ce39f5ce6e21369b2368bac038221393755e7",
+      "role": "unchanged executable source"
+    },
+    {
+      "path": "vendor/jellobrain/crosstalk_probe.py",
+      "source_path": "crosstalk_probe.py",
+      "source_commit": "0141b091f7efda638feede6e9a4d8b15003e7af6",
+      "sha256": "2cbaddd5f2367eb10186b11d6ee6eba7adc521f4cc5b6f650363c9d03c06538a",
+      "role": "unchanged executable source"
+    },
+    {
+      "path": "vendor/jellobrain/LICENSE",
+      "source_path": "LICENSE",
+      "source_commit": "0141b091f7efda638feede6e9a4d8b15003e7af6",
+      "sha256": "a708870a7ff7c1ab5b200a3bd59e3d615da86cc82525489f0795359be5b12f56",
+      "role": "upstream license"
+    },
+    {
+      "path": "sources/ADDRESSABILITY_RESULT.md",
+      "source_path": "ADDRESSABILITY_RESULT.md",
+      "source_commit": "0141b091f7efda638feede6e9a4d8b15003e7af6",
+      "sha256": "b5b527cf664930dd1a60edebee687c30bef3d7a307877ccb4890f1543ff04210",
+      "role": "archived report; not a fresh reproduction"
+    },
+    {
+      "path": "sources/FRONTIER_RESULT.md",
+      "source_path": "FRONTIER_RESULT.md",
+      "source_commit": "0141b091f7efda638feede6e9a4d8b15003e7af6",
+      "sha256": "2c6192d8d99b4f8d1c3df8de10ab8010615ab3bbe173a74a4e7e504ad297a5da",
+      "role": "archived report; not a fresh reproduction"
+    },
+    {
+      "path": "sources/ADDRESSABILITY_LEDGER.md",
+      "source_path": "ADDRESSABILITY_LEDGER.md",
+      "source_commit": "0141b091f7efda638feede6e9a4d8b15003e7af6",
+      "sha256": "b205fe4167e641eb4489b026daba53fdb961c9c7eaf2346043a067a2364899bc",
+      "role": "archived report; not a fresh reproduction"
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "schema": "paper/diagnostics-v1",
+  "date_utc": "2026-09-07",
+  "python": "3.12.13",
+  "numpy": "2.3.5",
+  "description": "Reproduced upstream write diagnostic and analytic-control simulations; no growing learner is evaluated.",
+  "upstream_sha": "0141b091f7efda638feede6e9a4d8b15003e7af6",
+  "cross_write_file_sha256": "8f20b23d275d5571f06e615fb7aa730f115376c181bd0a0e18d5995445145fe3",
+  "cross_write": {
+    "n_seeds": 12,
+    "shared_matrix": [
+      [
+        4.6086012376693e-06,
+        -4.626757795704132e-06
+      ],
+      [
+        -4.6240594802071655e-06,
+        4.611118945341275e-06
+      ]
+    ],
+    "shared_margin": 8.589213932911713e-06,
+    "separated_margin": 0.6579877946378395,
+    "off_over_diag": 1.0033728890121878,
+    "separated_max_abs_off_diagonal": 0.0,
+    "angle_between_columns_of_mean_matrix_degrees": 179.80707353875906
+  },
+  "coordinate_counterexample": {
+    "original_gradients": [
+      [
+        1.0,
+        2.0
+      ],
+      [
+        1.0,
+        -2.0
+      ]
+    ],
+    "coordinate_scale": [
+      [
+        3.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "original_cosine": -0.5999999999999999,
+    "reparameterized_cosine": 0.3846153846153847
+  },
+  "noise_counterexample": {
+    "sample_gradient_cosine": -1.0,
+    "optimal_single_mean": 0.0,
+    "optimal_preoutcome_mse": 1.0
+  },
+  "relative_responsibility_counterexample": {
+    "residuals": [
+      100.0,
+      101.0
+    ],
+    "gaussian_variance": 1.0,
+    "best_model_responsibility": 1.0,
+    "best_model_negative_log_likelihood": 5000.918938533205
+  },
+  "common_descent": {
+    "angle_degrees": [
+      0,
+      90,
+      179.8,
+      180
+    ],
+    "optimal_values": [
+      1.0,
+      0.7071067811865476,
+      0.0017453283658982615,
+      6.123233995736766e-17
+    ]
+  },
+  "timing": [
+    {
+      "hazard": 0.05,
+      "n_seeds": 64,
+      "steps_per_seed": 20000,
+      "scored_steps": 19999,
+      "metrics": {
+        "constant_zero": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "causal_mixture": {
+          "mean": 0.19045621031051546,
+          "ci95": [
+            0.1890936049438,
+            0.1918188156772309
+          ]
+        },
+        "last_expert": {
+          "mean": 0.20050690034501725,
+          "ci95": [
+            0.19899289438200007,
+            0.20202090630803443
+          ]
+        },
+        "outcome_selected_invalid": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "conflict_rate": {
+          "mean": 0.05012672508625431,
+          "ci95": [
+            0.04974822359550002,
+            0.05050522657700861
+          ]
+        }
+      },
+      "exact_expected_mse": {
+        "constant_zero": 1.0,
+        "causal_mixture": 0.19,
+        "last_expert": 0.2,
+        "outcome_selected_invalid": 0.0
+      },
+      "exact_expected_conflict_rate": 0.05
+    },
+    {
+      "hazard": 0.5,
+      "n_seeds": 64,
+      "steps_per_seed": 20000,
+      "scored_steps": 19999,
+      "metrics": {
+        "constant_zero": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "causal_mixture": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "last_expert": {
+          "mean": 1.999103080154008,
+          "ci95": [
+            1.995340250858508,
+            2.002865909449508
+          ]
+        },
+        "outcome_selected_invalid": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "conflict_rate": {
+          "mean": 0.499775770038502,
+          "ci95": [
+            0.498835062714627,
+            0.500716477362377
+          ]
+        }
+      },
+      "exact_expected_mse": {
+        "constant_zero": 1.0,
+        "causal_mixture": 1.0,
+        "last_expert": 2.0,
+        "outcome_selected_invalid": 0.0
+      },
+      "exact_expected_conflict_rate": 0.5
+    }
+  ]
+}

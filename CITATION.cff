@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this research note or its diagnostic code, please cite this repository. This is an AI-assisted draft, not a peer-reviewed publication."
+type: article
+title: "When Should a Learner Split? Responsibility, Interference, and Evidence for Structural Specialization"
+authors:
+  - family-names: Luode
+    given-names: Antti
+version: "0.1"
+date-released: 2026-09-07
+url: "https://github.com/anttiluode/Paper"
+repository-code: "https://github.com/anttiluode/Paper"
+license: MIT
+keywords:
+  - continual learning
+  - mixture of experts
+  - structural plasticity
+  - causal prediction

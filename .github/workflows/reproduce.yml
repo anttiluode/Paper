@@ -1,0 +1,33 @@
+name: Reproduce paper diagnostics
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  diagnostics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install direct dependency versions
+        run: python -m pip install -r requirements-lock.txt
+      - name: Reproduce upstream cross-write diagnostic
+        run: python vendor/jellobrain/crosstalk_probe.py > results/jellobrain_cross_write.json
+      - name: Run information-bound controls and render figures
+        run: python analysis/run_analysis.py
+      - name: Check source integrity and causal timing
+        run: python analysis/check.py
+      - name: Build manuscript PDF
+        run: python analysis/build_pdf.py
+      - name: Save reproduced receipts and manuscript
+        uses: actions/upload-artifact@v4
+        with:
+          name: reproduced-paper
+          path: |
+            results/
+            figures/
+            output/pdf/
